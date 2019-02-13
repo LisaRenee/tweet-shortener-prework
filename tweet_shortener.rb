@@ -24,5 +24,5 @@ def word_substituter(tweet)
       end
     end
     improved_word
-  end 
+  end
 end
