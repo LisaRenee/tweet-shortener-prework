@@ -47,5 +47,5 @@ tweet
 end
 def shortened_tweet_truncator(tweet)
 
-tweet(1..140)
+tweet[1..140]
 end
