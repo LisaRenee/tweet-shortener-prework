@@ -16,7 +16,7 @@ hash = {
 end
 
 def word_substituter(tweet)
-  tweet.split(" ").collect do |word|
+  processed_tweet = tweet.split(" ").collect do |word|
     improved_word = word
     dictionary.each do |original_word, slang_word|
       if word == original_word
@@ -25,4 +25,5 @@ def word_substituter(tweet)
     end
     improved_word
   end
+  processed_tweet.join(" ")
 end
